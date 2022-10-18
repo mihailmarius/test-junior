@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Test angajare</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="middle">
+        <button class="btn btn1" id="open-cart">Deschide Cos</button>
+        <button class="btn btn2" id="populate-prods">Incarca produse</button>
+    </div>
+    <div class="sidebar-pop" id="sidebar">
+        <button class="close" id="close-popup">+</button>
+        <div class="pop-right">
+            <div class="section-top" id="section-title">
+                <h1 class="top-msg"><span id="total-prod2">0</span> produse în valoare de <span
+                        id="total-price-right2">0 Lei</span></h1>
+                <p class="sub-msg">Minimum order amount to delivery — <small>34,90 lei</small></p>
+            </div>
+            <script> // Optional am adaugat si cadoul briosa </script>
+            <!--  
+            <div class="section-product" id="gift">
+                <div class="section-cart">
+                    <img src="imagini/briosa.jpeg" class="product-img" alt="briosa cu ciocolata" />
+                    <div class="text-cart">
+                        <h2 class="product-title">Brioșă cu ciocolată</h2>
+                        <p class="product-cant">1 buc</p>
+                        <div class="gift-section">
+                            <img src="imagini/gift.svg" class="svg-gift" />
+                            <span class="gift-text">Cadou</span>
+                        </div>
+                    </div>
+                    <span class="delete-product">X</span>
+
+                </div>
+                <hr />
+                <div class="total-price">
+                    <p class="text-price">0,00 <span class="old-price">6.40</span></p>
+                </div>
+            </div>
+-->
+            <div id="populate"></div>
+            <div class="total-section" id="total-section">
+                <input type="text" name="text" placeholder="Promocod">
+                <hr style="width: 100%" />
+                <p class="prods"><span id="total-prod">0</span> Produse <span class="total-right"
+                        id="total-price-right">27,90 Lei</span></p>
+                <p class="prods">Încărcați Dodocoins
+                    <span class="total-right">+1,00 </span>
+                </p>
+                <p class="prods">Livrare <span class="total-right">Gratis</span></p>
+                <hr style="width: 100%; margin:20px 0;" />
+                <p class="text-price">Total <span class="total-right" id="total-price-down">0 Lei</span></p>
+                <button class="btn" style="margin: 10px 0;">Spre plata</button>
+            </div>
+            <div class="empty-cart">
+                <img src="imagini/dog.svg" style="max-width: 314px;" />
+                <h1>Of, e gol!</h1>
+                <p>Pentru livrare comanda minimă este de 34,90 lei</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
